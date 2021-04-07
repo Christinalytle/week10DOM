@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDo App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body class="container">
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group" >
+                            <label for="new-grocery-item">Grocery Item</label>
+                            <input type="text" class="form-control" id="new-grocery-item">
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group" id="store" >
+                            <label>Store</label>
+                            <br>
+                            <input type="radio" id="frys" name="gender" value="Fry's">
+                            <label for="frys">Fry's</label><br>
+                            <input type="radio" id="traderJoes" name="gender" value="Trader Joes">
+                            <label for="traderJoes">Trader Joes</label><br>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    </div>
+                <div>
+                    <button id="add" class="btn btn-primary">Create</button>  <!--form-control missing-->
+                </div>
+            </div>
+        </div>
+        <table id="list" class="table table-dark table-strpied">
+            <tr>
+                <th>Grocery Item</th>
+                <th>Date Created</th>
+                <th>Store</th> 
+                <th>Actions</th>
+            </tr>
+        </table>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="grocery.js"></script>
+    </body>
+</html>
